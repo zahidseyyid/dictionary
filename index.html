@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <title>Dictionary - Cheavbella </title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <div class="container" id="container">
+        <div class="searchBox">
+            <input id="searchInput" type="text" placeholder="Type to search">
+            <a href="#">
+               <i id="playIcon" class="fas fa-play"></i> 
+                <div id="hiddenBox" class="hidden">
+                  <i id="searchButton" class="fas fa-search"></i> 
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div id="result" class="card">
+        <h1 id="word">Word</h1>
+        <p id="meaning">Meaning</p>
+        <p id="readingWord">Reading Word</p>
+        <audio id="audio" controls>
+            <source src="" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <p id="definition">Definition</p>
+        <p id="synonyms">Synonyms</p>
+        <p id="antonyms">Antonyms</p>
+        <p id="example">Example</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

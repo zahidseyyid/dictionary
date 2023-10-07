@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #151414;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.searchBox {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#searchInput {
+    width: 0;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: width 0.8s ease-in-out;
+    background: transparent;
+}
+
+#playIcon {
+    font-size: 24px;
+    color: #ff0000;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+#hiddenBox {
+    display: none;
+    margin-left: 10px;
+}
+
+#searchButton {
+    font-size: 24px;
+    color: #ff0000;
+}
+
+#result {
+    display: none;
+}
+
+
+
+.card {
+    display: none;
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+.card p {
+    margin: 10px 0;
+}
